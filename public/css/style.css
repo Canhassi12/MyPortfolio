@@ -8,7 +8,7 @@
 
 #nav-name {
     gap: 30px;
-    font-family: 'Inter';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -16,7 +16,7 @@
 }
 
 .font {
-    font-family: 'Inter';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 300;
     line-height: 29px;
@@ -42,7 +42,7 @@
 }
 
 .contact-button {
-    font-family: 'Inter';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     Font-style: Light;
     Line-height: 124%;
     color: white;
