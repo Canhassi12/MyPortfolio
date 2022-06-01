@@ -90,9 +90,9 @@
                         
                         
 
-                        <div class="w-48 h-14 border-2 border-l-[#1F1E1E] border-black flex justify-center items-center hover:bg-[#1F1E1E]">
+                        <button id="metro-sp" class="w-48 h-14 border-2 border-l-[#1F1E1E] border-black flex justify-center items-center hover:bg-[#1F1E1E]">
                             <li class="">MetroSp</li>
-                        </div>
+                        </button>
 
                         <div class="w-48 h-14 border-2 border-l-[#1F1E1E] border-black flex justify-center items-center hover:bg-[#1F1E1E]">
                             <li class="">*</li>
@@ -109,6 +109,9 @@
                    
                     <section class="font flex">
                         <p class="hidden" id="fds">sdkfjkls</p>
+                    </section>
+                    <section class="font flex">
+                        <p class="hidden" id="fds2">dalee</p>
                     </section>
                 </div> 
             </div>

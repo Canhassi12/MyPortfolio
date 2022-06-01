@@ -1,7 +1,16 @@
 
-let info = document.getElementById('high-school')
-info.addEventListener('click', display);
+document.getElementById('high-school').addEventListener('click', display1);
 
-function display() {
-    document.getElementById('fds').classList.remove('hidden')
+document.getElementById('metro-sp').addEventListener('click', display2)
+
+function display1() {
+    document.getElementById('fds').classList.toggle('hidden')
+}
+
+function removeDisplays() {
+    
+}
+
+function display2() {
+    document.getElementById('fds2').classList.toggle('hidden')
 }
