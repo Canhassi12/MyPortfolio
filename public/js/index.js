@@ -4,7 +4,9 @@ document.getElementById('high-school').addEventListener('click', display1);
 document.getElementById('metro-sp').addEventListener('click', display2)
 
 function display1() {
-    document.getElementById('fds').classList.toggle('hidden');
+    document.getElementById('school-paragraph').classList.toggle('hidden');
+    document.getElementById('high-school').classList.toggle('onclic')
+    
 }
 
 function removeDisplays() {
@@ -12,10 +14,8 @@ function removeDisplays() {
 }
 
 function display2() {
-    if (display1 == 1) {
-        document.getElementById('fds').classList.add('hidden');
-        return;
-    }
-    document.getElementById('fds2').classList.toggle('hidden'); 
+    document.getElementById('metro-sp').classList.toggle('onclic')
+
+    document.getElementById('metro-paragraph').classList.toggle('hidden'); 
       
 }

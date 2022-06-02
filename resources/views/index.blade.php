@@ -14,23 +14,31 @@
             <nav class="px-2 py-2.5 w-full mt-10">
                 <div class="flex flex-wrap justify-between items-center mx-auto">
                     <a href="" class="flex items-center">
-                        <span class="self-center font-semibold font text-2xl">Arthur Canhassi</span>
+                        <button class="self-center font-semibold font text-2xl">Arthur Canhassi</button>
                     </a>
                     <div class="flex gap-8 font text-lg">
                         <p>Projects</p>
-                        <p>Resume</p>
-                        <p>Contact</p>
-                        <p>fds</p>
+
+                        <a href="#resume">
+                            <p>Resume</p>
+                        </a>
+                        
+                        <a href="#contact">
+                           <p>Contact</p> 
+                        </a>
+                            
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill=#ffffff viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10v-20zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg></button>
+                        
                     </div>  
                 </div>
             </nav>
         </header>
-        <h4 class="font text-base mt-32">Hey, i'm</h4>
+        <h4 id="resume" class="font text-base mt-32">Hey, i'm</h4>
         <h1 class="name mt-5">Arthur Canhassi</h1>
         <p class="font text-lga mt-3">
             I'm a software engineer, live in São Paulo, Brazil and i'm mechatronics technician. I study software development, and for to practice i make projects that i need in my day to day. I am a member of He4rt Developer comunity, my main programing languages is the PHP, JS, C++, and framework i study Laravel and Vuejs. 
         </p>
-        <ul class="flex gap-2 mt-24">
+        <ul id="contact" class="flex gap-2 mt-24">
             <a href="" target="_blank">
                 <button class="bg-gradient-to-tr from-[#9358F7] to-[#10D7E2] p-0.5 rounded">
                     <div class="flex justify-center items-center contact-button text-base w-[200px] h-[55px] bg-main border-black rounded gap-2">
@@ -73,17 +81,47 @@
             <h3 class="font mt-20 ">EXPERIENCE</h3>
             <div class="font mt-10 max-w-min">
                 <div class="flex">
-                    <ul class="flex flex-col text-center  max-w-min">
-                        
-                        <button id="high-school" class="w-48 h-14 border-2 border-l-[#1F1E1E] border-black flex justify-center items-center hover: hover:bg-[#1F1E1E]">
-                            <li class="">High school</li>
-                        </button>  
-                        
-                        
-
+                    <ul class="flex flex-col text-center">
                         <button id="metro-sp" class="w-48 h-14 border-2 border-l-[#1F1E1E] border-black flex justify-center items-center hover:bg-[#1F1E1E]">
                             <li class="">MetroSp</li>
                         </button>
+
+                        <section class="font hidden justify-start w-[699px] ml-72 " id="metro-paragraph">
+                            <div class="flex items-baseline text-base">
+                               <h1 class="text-2xl">Companhia do metropolitano de São Paulo</h1> 
+                               <p class="text-[#C4C4C4] ml-20">May 2022 - Present</p>
+                            </div>
+                            <div class="flex">
+                               <p class="mt-6 text-sm text-[#6CACE4]">São Paulo | Brazil</p> 
+                            </div>
+                            
+                            <div class="flex">
+                               <p class="mt-6 text-base text-[#C4C4C4]">-Machine maintenance mechanic in general / mechatronics</p> 
+                            </div>
+    
+                            <hr class="bg-white mt-8">
+                            
+                        </section>
+
+                        <button id="high-school" class="w-48 h-14 border-2 border-l-[#1F1E1E] border-black flex justify-center items-center hover: hover:bg-[#1F1E1E] 0">
+                            <li class="">High school</li>
+                        </button>  
+                        
+                        <section class="font hidden justify-start w-[699px] ml-72 " id="school-paragraph">
+                            <div class="flex items-baseline text-base">
+                               <h1 class="text-2xl">Etec Professor Basilides de godoy</h1> 
+                               <p class="text-[#C4C4C4] ml-20">Jan 2019 - Complete</p>
+                            </div>
+                            <div class="flex">
+                               <p class="mt-6 text-sm text-[#6CACE4]">São Paulo | Brazil</p> 
+                            </div>
+                            
+                            <div class="flex">
+                               <p class="mt-6 text-base text-[#C4C4C4]">-High School + mechatronics technician</p> 
+                            </div>
+    
+                            <hr class="bg-white mt-8">
+                        </section> 
 
                         <div class="w-48 h-14 border-2 border-l-[#1F1E1E] border-black flex justify-center items-center hover:bg-[#1F1E1E]">
                             <li class="">*</li>
@@ -97,13 +135,6 @@
                             <li class="">*</li>
                         </div>
                     </ul>
-                   
-                    <section class="font flex">
-                        <p class="hidden" id="fds">sdkfjkls</p>
-                    </section>
-                    <section class="font flex">
-                        <p class="hidden" id="fds2">dalee</p>
-                    </section>
                 </div> 
             </div>
         </div>
