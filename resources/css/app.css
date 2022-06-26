@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: Inter;
+    src: url(https://fonts.googleapis.com/css2?family=Inter&display=swap);
+
+    font-family: FiraCode;
+    src: url(https://fonts.googleapis.com/css2?family=Fira+Code&display=swap);
+
+    font-family: 'monte';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+}
+
+.font {
+    @apply text-white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.name {
+    font-family: 'FiraCode';
+    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.email-gradient {
+    @apply from-[#9358F7] to-[#10D7E2];
+}
+
+.linkedin-gradient {
+    @apply from-[#6964DE] to-[#FCA6E9];
+}
+
+.github-gradient {
+    @apply from-[#F4426C] to-[#FBF2B1]; 
+}
+
+.instagram-gradient {
+    @apply from-[#D24074] to-[#6518B4];
+}
+
+

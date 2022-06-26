@@ -3,6 +3,8 @@
 use App\Http\Controllers\PortifolioController;
 use Illuminate\Support\Facades\Route;
 use PHPUnit\TextUI\XmlConfiguration\Group;
+use Illuminate\Support\Facades\Http;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +20,4 @@ use PHPUnit\TextUI\XmlConfiguration\Group;
 Route::get('/', function() {
    return redirect(to:'/Canhassi');
 });
-
-Route::get('/Canhassi', [PortifolioController::class, 'index'])->name('site.index');
-
-// Route::prefix('/Canhassi')->Group(function () {
-
-// })
+Route::middleware('throttle:manyRequests')->get('/Canhassi', [PortifolioController::class, 'index'])->name('site.index');
