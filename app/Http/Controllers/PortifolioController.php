@@ -5,13 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
-use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Cache;
+use App\Services\GithubRequest;
 use GuzzleHttp\Client;
-
-
-
 
 class PortifolioController extends Controller
 {
@@ -35,25 +30,7 @@ class PortifolioController extends Controller
             'Netflix-Anime'
         );
 
-        if (!Cache::has('request')) {
-            for ($i = 0; $i <= 5; $i++) {
-
-                $response = $client->request('GET', $baseUrl . $repos[$i]);
-
-                $body = json_decode($response->getBody());
-
-                $repositories[] = [
-                    'name'        => $body->name,
-                    'url'         => $body->html_url,
-                    'stars'       => $body->stargazers_count,
-                    'description' => $body->description,
-                    'img'         => "https://raw.githubusercontent.com/Canhassi12/{$body->name}/main/{$body->name}.png",
-                ];
-            }
-            Cache::put('request', $repositories, now()->addDay());
-        }
-
-        $repositories = Cache::get('request');
+        $repositories = GithubRequest::getRepositories($client, $baseUrl, $repos);
 
         return view('index', compact('repositories'));
     }
