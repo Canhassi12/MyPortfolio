@@ -2,16 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: Inter;
-    src: url(https://fonts.googleapis.com/css2?family=Inter&display=swap);
+/* Inter */
+@import url(https://fonts.googleapis.com/css2?family=Inter&display=swap);
 
-    font-family: FiraCode;
-    src: url(https://fonts.googleapis.com/css2?family=Fira+Code&display=swap);
+/* Firacode */
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code&display=swap);
 
-    font-family: 'monte';
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
-}
+/* Monteserrat */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap);
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 .font {
     @apply text-white;
@@ -19,7 +20,7 @@
 }
 
 .name {
-    font-family: 'FiraCode';
+    font-family: sans-serif;
     background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

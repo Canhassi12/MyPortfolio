@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap);
 /*
 ! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
 *//*
@@ -436,9 +440,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .right-0 {
   right: 0px;
 }
-.col-auto {
-  grid-column: auto;
-}
 .m-auto {
   margin: auto;
 }
@@ -464,14 +465,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-20 {
   margin-top: 5rem;
 }
-.ml-72 {
-  margin-left: 18rem;
-}
-.ml-20 {
-  margin-left: 5rem;
+.ml-52 {
+  margin-left: 13rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mt-4 {
+  margin-top: 1rem;
 }
 .mt-8 {
   margin-top: 2rem;
@@ -497,9 +498,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ml-2 {
   margin-left: 0.5rem;
 }
-.mt-4 {
-  margin-top: 1rem;
-}
 .ml-4 {
   margin-left: 1rem;
 }
@@ -524,6 +522,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-14 {
   height: 3.5rem;
 }
+.h-full {
+  height: 100%;
+}
 .h-5 {
   height: 1.25rem;
 }
@@ -545,12 +546,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-48 {
   width: 12rem;
 }
-.w-\[699px\] {
-  width: 699px;
-}
-.w-\[1300px\] {
-  width: 1300px;
-}
 .w-80 {
   width: 20rem;
 }
@@ -563,8 +558,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-auto {
   width: auto;
 }
-.w-\[200px\] {
-  width: 200px;
+.w-\[12\.5rem\] {
+  width: 12.5rem;
 }
 .min-w-max {
   min-width: -webkit-max-content;
@@ -591,17 +586,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-wrap {
   flex-wrap: wrap;
 }
-.flex-wrap-reverse {
-  flex-wrap: wrap-reverse;
-}
 .items-center {
   align-items: center;
-}
-.items-baseline {
-  align-items: baseline;
-}
-.justify-start {
-  justify-content: flex-start;
 }
 .justify-center {
   justify-content: center;
@@ -609,44 +595,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-between {
   justify-content: space-between;
 }
-.justify-around {
-  justify-content: space-around;
-}
-.justify-evenly {
-  justify-content: space-evenly;
-}
 .gap-8 {
   gap: 2rem;
+}
+.gap-3 {
+  gap: 0.75rem;
 }
 .gap-2 {
   gap: 0.5rem;
 }
 .gap-1 {
   gap: 0.25rem;
-}
-.gap-10 {
-  gap: 2.5rem;
-}
-.gap-6 {
-  gap: 1.5rem;
-}
-.gap-12 {
-  gap: 3rem;
-}
-.gap-36 {
-  gap: 9rem;
-}
-.gap-5 {
-  gap: 1.25rem;
-}
-.gap-7 {
-  gap: 1.75rem;
-}
-.gap-20 {
-  gap: 5rem;
-}
-.gap-40 {
-  gap: 10rem;
 }
 .self-center {
   align-self: center;
@@ -707,6 +666,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-0 {
   padding: 0px;
 }
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -730,8 +693,37 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pt-8 {
   padding-top: 2rem;
 }
+.text-left {
+  text-align: left;
+}
 .text-center {
   text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.font-\[\'Montserrat\'\] {
+  font-family: 'Montserrat';
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -741,22 +733,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
 .font-semibold {
   font-weight: 600;
+}
+.font-medium {
+  font-weight: 500;
 }
 .uppercase {
   text-transform: uppercase;
 }
 .leading-7 {
   line-height: 1.75rem;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .text-\[\#C4C4C4\] {
   --tw-text-opacity: 1;
@@ -808,63 +799,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@font-face {
-    font-family: Inter;
-    src: url(https://fonts.googleapis.com/css2?family=Inter&display=swap);
+/* Inter */
 
-    font-family: FiraCode;
-    src: url(https://fonts.googleapis.com/css2?family=Fira+Code&display=swap);
+/* Firacode */
 
-    font-family: 'monte';
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
-}
+/* Monteserrat */
 
-#nav-name {
-    gap: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 22px;
-}
+/* Poppins */
 
 .font {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 29px;
-    color: white;
 }
 
 .name {
-    text-align: justify;
-    text-justify: inter-word;
-    font-family: 'FiraCode';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 96px;
-    line-height: 110px;
+    font-family: sans-serif;
     background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
-.border-email {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.contact-button {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    Font-style: Light;
-    Line-height: 124%;
-    color: white;
-}
-
-.onclic {
-    background-color: #1F1E1E;
-}
-
 
 .email-gradient {
   --tw-gradient-from: #9358F7;
@@ -938,8 +893,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: block;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-20 {
     height: 5rem;
+  }
+
+  .sm\:max-w-2xl {
+    max-width: 42rem;
   }
 
   .sm\:items-center {
@@ -978,8 +941,69 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 768px) {
 
+  .md\:ml-56 {
+    margin-left: 14rem;
+  }
+
+  .md\:ml-\[80px\] {
+    margin-left: 80px;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-\[55px\] {
+    height: 55px;
+  }
+
+  .md\:w-\[700px\] {
+    width: 700px;
+  }
+
+  .md\:w-44 {
+    width: 11rem;
+  }
+
+  .md\:max-w-4xl {
+    max-width: 56rem;
+  }
+
+  .md\:max-w-md {
+    max-width: 28rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .md\:gap-x-56 {
+    -moz-column-gap: 14rem;
+         column-gap: 14rem;
   }
 
   .md\:border-t-0 {
@@ -989,13 +1013,194 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:border-l {
     border-left-width: 1px;
   }
+
+  .md\:text-center {
+    text-align: center;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px) {
 
+  .lg\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:ml-\[120px\] {
+    margin-left: 120px;
+  }
+
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:h-52 {
+    height: 13rem;
+  }
+
+  .lg\:h-\[55px\] {
+    height: 55px;
+  }
+
+  .lg\:w-11\/12 {
+    width: 91.666667%;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:w-\[930px\] {
+    width: 930px;
+  }
+
+  .lg\:w-80 {
+    width: 20rem;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-\[12\.5rem\] {
+    width: 12.5rem;
+  }
+
+  .lg\:max-w-5xl {
+    max-width: 64rem;
+  }
+
+  .lg\:gap-24 {
+    gap: 6rem;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:text-justify {
+    text-align: justify;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .xl\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .xl\:h-52 {
+    height: 13rem;
+  }
+
+  .xl\:w-full {
+    width: 100%;
+  }
+
+  .xl\:w-\[75rem\] {
+    width: 75rem;
+  }
+
+  .xl\:w-80 {
+    width: 20rem;
+  }
+
+  .xl\:max-w-7xl {
+    max-width: 80rem;
+  }
+
+  .xl\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .xl\:gap-28 {
+    gap: 7rem;
+  }
+
+  .xl\:text-left {
+    text-align: left;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+
+  .\32xl\:ml-72 {
+    margin-left: 18rem;
+  }
+
+  .\32xl\:w-\[1400px\] {
+    width: 1400px;
   }
 }
 
