@@ -136,20 +136,6 @@
 
                         </section>
                             <hr class="border-black dark:border-white mt-8 lg:w-auto">
-                        <div
-                            class="w-48 h-14 mt-10 hidden md:block border-2 dark:border-l-gray-600 dark:border-neutral-900 border-transparent border-l-[#1F1E1E] flex justify-center items-center hover:bg-[#1F1E1E] hover:border-l-[#10D7E2] hover:text-white dark:hover:border-l-white">
-                            *
-                        </div>
-
-                        <div
-                            class="w-48 h-14 mt-5 hidden md:block border-2 dark:border-l-gray-600 dark:border-neutral-900 border-transparent border-l-[#1F1E1E] flex justify-center items-center hover:bg-[#1F1E1E] hover:border-l-[#10D7E2] hover:text-white dark:hover:border-l-white">
-                            *
-                        </div>
-
-                        <div
-                            class="w-48 h-14 mt-5 hidden md:block border-2 dark:border-l-gray-600 dark:border-neutral-900 border-transparent border-l-[#1F1E1E] flex justify-center items-center hover:bg-[#1F1E1E] hover:border-l-[#10D7E2] hover:text-white dark:hover:border-l-white">
-                            *
-                        </div>
                     </ul>
                 </div>
                 <p id="projects" class="uppercase title mt-20 text-2xl md:text-center xl:text-left">featured projects</p>
