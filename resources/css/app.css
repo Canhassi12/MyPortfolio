@@ -14,10 +14,13 @@
 /* Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-.font {
-    @apply text-white;
-    font-family: 'Montserrat', sans-serif;
-}
+* {
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+  }
 
 .name {
     font-family: sans-serif;
@@ -26,6 +29,15 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+.title {
+    background: linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    @apply font-semibold ;
+}
+
 
 .email-gradient {
     @apply from-[#9358F7] to-[#10D7E2];
@@ -42,5 +54,3 @@
 .instagram-gradient {
     @apply from-[#D24074] to-[#6518B4];
 }
-
-
