@@ -17,7 +17,4 @@ use Illuminate\Support\Facades\Http;
 |
 */
 
-Route::get('/', function() {
-   return redirect(to:'/Canhassi');
-});
-Route::middleware('throttle:manyRequests')->get('/Canhassi', [PortifolioController::class, 'index'])->name('site.index');
+Route::middleware('throttle:manyRequests')->get('/', [PortifolioController::class, 'index'])->name('site.index');
