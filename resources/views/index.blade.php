@@ -43,10 +43,10 @@
         <h1 class="name mt-5 text-5xl lg:text-8xl md:text-7xl text-justify font-medium xl:ml-0">Arthur Canhassi</h1>
 
         <p class="dark:text-white  text-base xl:w-full lg:text-lg md:text-base mt-3 lg:w-11/12 xl:text-left lg:text-justify xl:ml-0 ">
-            I'm a software engineer, live in São Paulo, Brazil and i'm mechatronics technician. I study software
-            development, and for to practice i make projects that i need in my day to
+            I'm a software engineer, live in São Paulo, Brazil and I'm mechatronics technician. I study software
+            development, and to practice I make projects that I need in my day to
             day. I am a member of He4rt Developer comunity, my main programing languages
-            is the PHP, JS, C++, and framework i study Laravel.
+            is PHP, JS, C++, and framework I study Laravel.
         </p>
         <ul id="contact" class="flex flex-col md:flex-row md:gap-2 gap-3 mt-24 items-center">
             <x-contact-button 
