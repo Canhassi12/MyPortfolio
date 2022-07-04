@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Canhassi | Home</title>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet"> 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
 </head>
 <body class="dark:bg-neutral-800">
     <section class="mx-auto px-4 sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-7xl ">
@@ -167,6 +167,6 @@
             </div>
         </div>
     </div>
-    <script src="{{ asset('js/index.js') }}"></script>
+    <script src="{{ secure_asset('js/index.js') }}"></script>
 </body>
 </html>
