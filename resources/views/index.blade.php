@@ -15,7 +15,7 @@
             <nav class="px-2 py-2.5 w-full mt-10 ">
                 <div class="flex flex-wrap justify-between items-center mx-auto">
                     <a href="" class="flex items-center">
-                        <button class="self-center font-semibold  dark:text-white text-xl lg:text-2xl md:text-xl gap-{30px} ">Arthur
+                        <button class="self-center font-semibold dark:text-white text-xl lg:text-2xl md:text-xl gap-{30px} ">Arthur
                             Canhassi</button>
                     </a>
                     <div class="flex gap-8  dark:text-white lg:text-lg md:text-base">

@@ -26,8 +26,8 @@ class PortifolioController extends Controller
             'MyAnimeList',
             'MyPortfolio',
             'api-2-php',
-            'Consumindo-api2-php',
-            'Netflix-Anime'
+            'LoginKamiya-FrontEnd',
+            'LoginKamiya-BackEnd'
         );
 
         $repositories = GithubRequest::getRepositories($client, $baseUrl, $repos);
