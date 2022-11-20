@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Canhassi | Home</title>
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet"> 
-    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body class="dark:bg-neutral-800">
     <section class="mx-auto px-4 sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-7xl ">
@@ -43,10 +42,11 @@
         <h1 class="name mt-5 text-5xl lg:text-8xl md:text-7xl text-justify font-medium xl:ml-0">Arthur Canhassi</h1>
 
         <p class="dark:text-white  text-base xl:w-full lg:text-lg md:text-base mt-3 lg:w-11/12 xl:text-left lg:text-justify xl:ml-0 ">
-            I'm a software engineer, live in São Paulo, Brazil and I'm mechatronics technician. I study software
-            development, and to practice I make projects that I need in my day to
-            day. I am a member of He4rt Developer comunity, my main programing languages
-            is PHP, JS, C++, and framework I study Laravel.
+            I'm a software engineer, live in São Paulo, Brazil. I study software
+            development, I like create projects that I need in my day to
+            day. I am a member of He4rtDeveloper community, my main technologies 
+            are PHP, Laravel, JavaScript, React. 
+            
         </p>
         <ul id="contact" class="flex flex-col md:flex-row md:gap-2 gap-3 mt-24 items-center">
             <x-contact-button 
@@ -91,7 +91,7 @@
                             MetroSp 
                         </button>
 
-                        <section class=" dark:text-white md:flex md:ml-56 md:flex-col 2xl:ml-72" id="metro-paragraph">
+                        <section class="dark:text-white md:flex md:ml-56 md:flex-col 2xl:ml-72" id="metro-paragraph">
                             
                             <div class=" lg:flex items-center">
                                 <h2 class="text-base xl:text-2xl  dark:text-[#C4C4C4] text-left md:text-x">Companhia do metropolitano de São Paulo.</h2>
@@ -135,11 +135,11 @@
                             <p class="mt-6 text-base text-justify dark:text-[#C4C4C4]">- Mechatronics technician.</p>
 
                         </section>
-                            <hr class="border-black dark:border-white mt-8 lg:w-auto">
+                        <hr class="border-black dark:border-white mt-8 lg:w-auto">
                     </ul>
                 </div>
                 <p id="projects" class="uppercase title mt-20 text-2xl md:text-center xl:text-left">featured projects</p>
-                <div class="md:justify-center md:gap-x-56 lg:ml-0 lg:gap-24 xl:gap-28 xl:justify-start flex flex-wrap">
+                <div class="pb-5 md:justify-center md:gap-x-56 lg:ml-0 lg:gap-24 xl:gap-28 xl:justify-start flex flex-wrap">
                     @foreach ($repositories as $repository)
                         <div class="xl:w-50 lg:w-50">
                             <div class="xl:w-80 xl:h-52 lg:w-80 lg:h-52 md:max-w-md">
@@ -149,7 +149,7 @@
                                 </a>
                             </div>
 
-                            <div class=" flex mt-6 text-2xl gap-2 w-80">
+                            <div class="flex mt-6 text-2xl gap-2 w-80">
                                 {{ $repository['name'] }}
                                 <div class="flex items-center gap-1">
                                     <x-icons.star />
@@ -157,16 +157,18 @@
                                 </div>
                             </div>
 
-                            <div class="text-base text-black dark:text-[#C4C4C4] mt-7">
+                            <div class="pb-5 text-base text-black dark:text-[#C4C4C4] mt-7">
                                 {{ $repository['description'] }}
                             </div>
                         </div>
                     @endforeach
                 </div>
-
             </div>
         </div>
     </div>
-    <script src="{{ secure_asset('js/index.js') }}"></script>
+    <footer class="bg-gray-100 dark:bg-neutral-900">
+        <p class="text-center text-base dark:text-gray-400 text-black">&copy; 2023 Canhassi, All rights reserved.</p>
+    </footer>
+    <script src="{{ asset('js/index.js') }}"></script>
 </body>
 </html>
