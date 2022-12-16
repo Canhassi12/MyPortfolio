@@ -1,6 +1,6 @@
 # my portfolio made in laravel  
 
-https://canhassi.tech
+## https://canhassi.tech
 
 in this project i used tailwind for the css and the blade of laravel. the GitHub API was consumed where I consume some of my projects and their information. and applied some knowledge like cache and rate limit. 
 
