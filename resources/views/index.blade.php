@@ -167,7 +167,7 @@
         </div>
     </div>
     <footer class="bg-gray-100 dark:bg-neutral-900">
-        <p class="text-center text-base dark:text-gray-400 text-black py-8 mb-2">&copy; 2023 Canhassi, All rights reserved.</p>
+        <p class="text-center text-base dark:text-gray-400 text-black py-8">&copy; 2023 Canhassi, All rights reserved.</p>
     </footer>
     <script src="{{ asset('js/index.js') }}"></script>
 </body>
