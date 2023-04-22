@@ -22,12 +22,12 @@ class PortifolioController extends Controller
         $baseUrl = "https://api.github.com/repos/Canhassi12/";
 
         $repos = array(
+            'transaction-system',
+            'binary-heap',
+            'food-api-system',
             'Learn-laravel',
             'MyAnimeList',
-            'MyPortfolio',
             'api-2-php',
-            'LoginKamiya-FrontEnd',
-            'LoginKamiya-BackEnd'
         );
 
         $repositories = GithubRequest::getRepositories($client, $baseUrl, $repos);

@@ -53,13 +53,13 @@
                 content="Send an email" 
                 icon="mail" 
                 color="email"
-                link="https://www.linkedin.com/in/arthur-canhassi-a0546114b/"/>
+                link="https://www.linkedin.com/in/canhassi"/>
 
             <x-contact-button 
                 content="Linkedln" 
                 icon="linkedin" 
                 color="linkedin"
-                link="https://www.linkedin.com/in/arthur-canhassi-a0546114b/"/>
+                link="https://www.linkedin.com/in/canhassi"/>
 
             <x-contact-button 
                 content="Github" 
@@ -167,7 +167,7 @@
         </div>
     </div>
     <footer class="bg-gray-100 dark:bg-neutral-900">
-        <p class="text-center text-base dark:text-gray-400 text-black">&copy; 2023 Canhassi, All rights reserved.</p>
+        <p class="text-center text-base dark:text-gray-400 text-black py-8 mb-2">&copy; 2023 Canhassi, All rights reserved.</p>
     </footer>
     <script src="{{ asset('js/index.js') }}"></script>
 </body>
