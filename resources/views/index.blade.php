@@ -45,7 +45,7 @@
             I'm a software engineer, live in São Paulo, Brazil. I study software
             development, I like create projects that I need in my day to
             day. I am a member of He4rtDeveloper community, my main technologies 
-            are PHP, Laravel, JavaScript, React. 
+            are PHP, Laravel, JavaScript, Rust and Go. 
             
         </p>
         <ul id="contact" class="flex flex-col md:flex-row md:gap-2 gap-3 mt-24 items-center">
